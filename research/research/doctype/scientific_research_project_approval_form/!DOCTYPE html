@@ -1,0 +1,379 @@
+<!DOCTYPE html>                 
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استمارة اعتماد مشروع بحث علمي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Amiri', 'Scheherazade New', 'Cairo', 'Tajawal', 'Traditional Arabic', serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .form-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.05;
+            font-size: 80px;
+            font-weight: bold;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 10000;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #b0b0b0;
+            padding-bottom: 20px;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+        }
+        
+        .header-text {
+            text-align: center;
+            flex: 1;
+            padding: 0 20px;
+        }
+        
+        .header-text h1 {
+            font-size: 22px;
+            color: #000;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .header-text h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 5px 0;
+        }
+        
+
+        .date-section {
+            text-align: right;
+            margin: 20px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .date-fields {
+            display: inline-flex;
+            gap: 10px;
+        }
+        
+        .date-field {
+            width: 60px;
+            padding: 5px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        
+        .section-title {
+            background: #b0b0b0;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+            border-radius: 4px;
+        }
+        
+        .info-section {
+            margin: 20px 0;
+        }
+        
+        .info-section label {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .info-section textarea,
+        .info-section input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: 2px solid #333;
+        }
+        
+        table th,
+        table td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        table th {
+            background: #f0f0f0;
+            font-weight: bold;
+        }
+        
+        .researchers-table input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            text-align: center;
+            font-family: inherit;
+        }
+        
+        .objectives-section {
+            min-height: 150px;
+            border: 1px solid #333;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .research-type-table {
+            margin: 20px 0;
+        }
+        
+        .research-type-table td {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .footer-note {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            font-style: italic;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .form-container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+        .section-title,
+.date-section,
+.info-section label,
+p {
+    text-align: right;
+    direction: rtl;
+}
+
+/* محاذاة عناوين الاستمارة إلى اليمين */
+.date-section {
+    text-align: right;
+    direction: rtl;
+}
+
+.section-title {
+    text-align: right;
+    direction: rtl;
+}
+
+.info-section label {
+    text-align: right;
+    direction: rtl;
+}
+
+p {
+    text-align: right;
+    direction: rtl;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <img src="/files/398187124_832924115292771_8632611931367621524_n.png"
+             alt="شعار الجامعة"
+             style="
+               position: fixed;
+               top: 50%;
+               left: 50%;
+               width: 70%;
+               opacity: 0.18;
+               transform: translate(-50%, -50%);
+               z-index: 9999;
+               pointer-events: none;
+             ">
+        
+        <div class="content">
+            <div class="header">
+                <div class="logo">
+                    <img src="/files/398187124_832924115292771_8632611931367621524_n.png" alt="شعار الجامعة" style="width: 95px; height: 95px; object-fit: contain; border: none;">
+                </div>
+                
+                <div class="header-text">
+                    <h1>استمارة اعتماد مشروع بحث علمي</h1>
+                    <h2>للعام الدراسي ٢٠ / ٢٠</h2>
+                    <h2>جامعة تلعفر / رئاسة الجامعة</h2>
+                </div>
+                
+                <div class="logo">
+                    <img src="/private/files/37171594305659483.png" alt="شعار وزارة التعليم العالي" style="width: 100px; height: 100px; object-fit: cover; border: none;">
+                </div>
+            </div>
+            
+
+            
+            <div class="date-section">
+                <span>تاريخ تقديم الاستمارة: </span>
+                <div class="date-fields">
+                    <input type="text" class="date-field" placeholder="٢٠">
+                    <span>/</span>
+                    <input type="text" class="date-field" placeholder="">
+                    <span>/</span>
+                    <input type="text" class="date-field" placeholder="">
+                </div>
+            </div>
+            
+            <p style="font-weight: bold; margin: 20px 0;">يرجى التفضل بالموافقة على تسجيل البحث المذكورة تفاصيله ادناه:</p>
+            
+            <div class="info-section">
+                <label>١) عنوان البحث:</label>
+                <textarea rows="3"></textarea>
+            </div>
+            
+            <div class="section-title">٢) اسماء الباحثون:</div>
+            
+            <table class="researchers-table">
+                <thead>
+                    <tr>
+                        <th>ت</th>
+                        <th>اسم الباحث</th>
+                        <th>التربية العلمية</th>
+                        <th>جهة الانتساب</th>
+                        <th>رقم الهاتف</th>
+                        <th>البريد الالكتروني</th>
+                        <th>التوقيع</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>١</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>٢</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>٣</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="section-title">موجز البحث وأهدافه:</div>
+            <div class="objectives-section"></div>
+            
+            <table class="research-type-table">
+                <tbody>
+                    <tr>
+                        <th>نوع البحث</th>
+                        <td>اكاديمي</td>
+                        <td></td>
+                        <td>تطبيقي</td>
+                        <td></td>
+                        <td>اكاديمي وتطبيقي</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>طبيعة البحث</th>
+                        <td>نظري</td>
+                        <td></td>
+                        <td>عملي</td>
+                        <td></td>
+                        <td>نظري وعملي</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>هل البحث</th>
+                        <td>مخطط</td>
+                        <td></td>
+                        <td>منجز</td>
+                        <td></td>
+                        <td>منشور</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>خارج الخطة</td>
+                        <td></td>
+                        <td>داخل الخطة</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="footer-note">
+                <p>في حال كون الباحث متفرغاً، يُرفق الباحث مستمسك من اول صفحة من البحث المنشور.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

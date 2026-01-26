@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-28 20:06:43.770674",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "researcher_name",
+  "academic_rank",
+  "affiliation",
+  "email",
+  "phone",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "researcher_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "researcher_name"
+  },
+  {
+   "fieldname": "academic_rank",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "academic_rank"
+  },
+  {
+   "fieldname": "affiliation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "affiliation"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "phone"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach",
+   "label": "signature"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-08 10:26:12.587330",
+ "modified_by": "obaidaamer@uotelafer.edu.iq",
+ "module": "Research",
+ "name": "Researcher",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
