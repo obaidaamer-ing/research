@@ -5,6 +5,11 @@ app_description = "abd"
 app_email = "obaidaamer@uotelafer.edu.iq"
 app_license = "mit"
 
+fixtures = [
+    {
+        "dt": "Translation"
+    }
+]
 # Apps
 # ------------------
 

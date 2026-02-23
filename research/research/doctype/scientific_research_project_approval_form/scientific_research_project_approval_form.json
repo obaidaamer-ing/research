@@ -25,7 +25,7 @@
   "additional_notes",
   "html_pbmy",
   "copy_of_the_first_search_page",
-  "tab_2_tab",
+  "section_break_pwen",
   "research_acceptance_information",
   "date_of_submission",
   "date_of_acceptance",
@@ -34,8 +34,7 @@
   "journal_type",
   "select_vprm",
   "copy_of_acceptance_certificate_proof_of_acceptance",
-  "additional",
-  "tab_3_tab"
+  "additional"
  ],
  "fields": [
   {
@@ -142,11 +141,6 @@
    "label": "Copy of the first search page"
   },
   {
-   "fieldname": "tab_2_tab",
-   "fieldtype": "Tab Break",
-   "label": "Tab 2"
-  },
-  {
    "fieldname": "research_acceptance_information",
    "fieldtype": "Data",
    "label": "Research acceptance information"
@@ -185,11 +179,6 @@
    "options": "Q1\nQ2\nQ3\nQ4"
   },
   {
-   "fieldname": "tab_3_tab",
-   "fieldtype": "Tab Break",
-   "label": "Tab 3"
-  },
-  {
    "fieldname": "copy_of_acceptance_certificate_proof_of_acceptance",
    "fieldtype": "Attach Image",
    "label": "Copy of Acceptance Certificate (Proof of Acceptance)"
@@ -204,12 +193,16 @@
    "fieldtype": "Select",
    "label": "Research",
    "options": "Inside the plan\nOutside the plan"
+  },
+  {
+   "fieldname": "section_break_pwen",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-05 12:08:19.318374",
+ "modified": "2026-02-23 12:17:02.751789",
  "modified_by": "obaidaamer@uotelafer.edu.iq",
  "module": "Research",
  "name": "Scientific Research Project Approval Form",
