@@ -8,7 +8,9 @@
   "form_header",
   "form_details_section",
   "date_of_application",
+  "column_break_vqtk",
   "text_editor_ayvn",
+  "column_break_rtxy",
   "research",
   "section_break_rubf",
   "researchers",
@@ -16,12 +18,14 @@
   "submission_date",
   "research_title",
   "research_type",
+  "column_break_ftue",
   "research_nature",
   "research_status",
   "research_plan",
   "additional_details_about_the_research_section",
   "research_summary",
   "first_page_attachment",
+  "column_break_sggd",
   "additional_notes",
   "html_pbmy",
   "copy_of_the_first_search_page",
@@ -33,6 +37,7 @@
   "magazine_website_link",
   "journal_type",
   "select_vprm",
+  "column_break_ggzx",
   "copy_of_acceptance_certificate_proof_of_acceptance",
   "additional"
  ],
@@ -79,7 +84,7 @@
   },
   {
    "fieldname": "submission_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Submission Date",
    "options": "\u062a\u0627\u0631\u064a\u062e \u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629"
   },
@@ -197,12 +202,32 @@
   {
    "fieldname": "section_break_pwen",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vqtk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rtxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ftue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sggd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ggzx",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-23 12:17:02.751789",
+ "modified": "2026-02-24 11:20:51.268497",
  "modified_by": "obaidaamer@uotelafer.edu.iq",
  "module": "Research",
  "name": "Scientific Research Project Approval Form",
