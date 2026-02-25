@@ -20,7 +20,7 @@ frappe.ui.form.on("Scientific Research Project Approval Form", {
 					Scientific Research Project Approval Form<br>
 					For the academic year 2025/2026<br>
 					<span style="font-size:20px;">
-						University of Tal Afar / University Presidency
+						University of Telafer / University Presidency
 					</span>
 				</div>
 
