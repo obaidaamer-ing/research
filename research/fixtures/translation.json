@@ -605,10 +605,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "ar",
-  "modified": "2026-02-25 15:02:51.740378",
+  "modified": "2026-02-25 15:13:18.159678",
   "name": "7cti9fgt9d",
-  "source_text": "phone",
-  "translated_text": "رقم الهاتف"
+  "source_text": "phone\nرقم الهاتف",
+  "translated_text": "رقم الهاتف\nphone"
  },
  {
   "context": null,
