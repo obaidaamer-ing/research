@@ -58,8 +58,8 @@
   },
   {
    "fieldname": "text_editor_ayvn",
-   "fieldtype": "HTML",
-   "options": "<link href=\"https://fonts.googleapis.com/css2?family=Tajawal:wght@500&amp;display=swap\" rel=\"stylesheet\">\n<div style='font-family: \"Tajawal\", sans-serif;\n  font-size: 18px;\n  color: #111111;\n  line-height: 1.8;\n  text-align: right;'>\n  :\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0641\u0636\u0644 \u0628\u0627\u0644\u0645\u0648\u0627\u0641\u0642\u0629 \u0639\u0644\u0649 \u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u0628\u062d\u062b \u0627\u0644\u0645\u0630\u0643\u0648\u0631\u0647 \u062a\u0641\u0627\u0635\u064a\u0644\u0647 \u0623\u062f\u0646\u0627\u0647\n</div>\n"
+   "fieldtype": "Heading",
+   "label": "Please approve the registration of the research detailed below."
   },
   {
    "fieldname": "research",
@@ -134,8 +134,8 @@
   },
   {
    "fieldname": "html_pbmy",
-   "fieldtype": "HTML",
-   "options": "<link href=\"https://fonts.googleapis.com/css2?family=Tajawal:wght@500&amp;display=swap\" rel=\"stylesheet\">\n\n<div style='font-family: \"Tajawal\", sans-serif;\n  font-size: 17px;\n  color: #444;\n  text-align: right;'>\n  <strong>\u0645\u0644\u0627\u062d\u0638\u0629:</strong> \u0641\u064a \u062d\u0627\u0644 \u0643\u0648\u0646 \u0627\u0644\u0628\u062d\u062b \u0645\u0646\u0634\u0648\u0631\u064b\u0627\u060c \u064a\u064f\u0631\u0641\u0642 \u0627\u0644\u0628\u0627\u062d\u062b \u0646\u0633\u062e\u0629 \u0645\u0646 \u0623\u0648\u0644 \u0635\u0641\u062d\u0629 \u0644\u0644\u0628\u062d\u062b \u0627\u0644\u0645\u0646\u0634\u0648\u0631\n</div>"
+   "fieldtype": "Heading",
+   "label": "Note: If the research is published, the researcher should attach a copy of the first page of the published research."
   },
   {
    "fieldname": "copy_of_the_first_search_page",
@@ -219,7 +219,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-25 12:54:46.549982",
+ "modified": "2026-02-25 13:54:33.318047",
  "modified_by": "obaidaamer@uotelafer.edu.iq",
  "module": "Research",
  "name": "Scientific Research Project Approval Form",
