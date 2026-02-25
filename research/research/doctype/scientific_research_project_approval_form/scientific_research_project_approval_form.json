@@ -7,10 +7,9 @@
  "field_order": [
   "form_header",
   "form_details_section",
+  "column_break_cllj",
   "date_of_application",
-  "column_break_vqtk",
   "text_editor_ayvn",
-  "column_break_rtxy",
   "research",
   "section_break_rubf",
   "researchers",
@@ -24,9 +23,7 @@
   "research_plan",
   "additional_details_about_the_research_section",
   "research_summary",
-  "first_page_attachment",
-  "column_break_sggd",
-  "additional_notes",
+  "section_break_ewbs",
   "html_pbmy",
   "copy_of_the_first_search_page",
   "section_break_pwen",
@@ -34,11 +31,11 @@
   "date_of_submission",
   "date_of_acceptance",
   "name_of_journal",
+  "journal_type_copy",
+  "column_break_xakb",
   "magazine_website_link",
-  "journal_type",
-  "select_vprm",
-  "column_break_ggzx",
   "copy_of_acceptance_certificate_proof_of_acceptance",
+  "section_break_ooos",
   "additional"
  ],
  "fields": [
@@ -55,7 +52,9 @@
   {
    "fieldname": "date_of_application",
    "fieldtype": "Date",
-   "label": "Date of application"
+   "in_list_view": 1,
+   "label": "Date of application",
+   "reqd": 1
   },
   {
    "fieldname": "text_editor_ayvn",
@@ -65,7 +64,9 @@
   {
    "fieldname": "research",
    "fieldtype": "Data",
-   "label": "Research"
+   "in_list_view": 1,
+   "label": "Research",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_rubf",
@@ -75,7 +76,8 @@
    "fieldname": "researchers",
    "fieldtype": "Table",
    "label": "researchers",
-   "options": "Researcher"
+   "options": "Researcher",
+   "reqd": 1
   },
   {
    "fieldname": "general_information_section",
@@ -85,32 +87,39 @@
   {
    "fieldname": "submission_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Submission Date",
-   "options": "\u062a\u0627\u0631\u064a\u062e \u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629"
+   "options": "\u062a\u0627\u0631\u064a\u062e \u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629",
+   "reqd": 1
   },
   {
    "fieldname": "research_title",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Research title",
-   "options": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0628\u062d\u062b"
+   "options": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0628\u062d\u062b",
+   "reqd": 1
   },
   {
    "fieldname": "research_type",
    "fieldtype": "Select",
    "label": "Research Type",
-   "options": "Academic\nApplied\nAcademic and Applied"
+   "options": "Academic\nApplied\nAcademic and Applied",
+   "reqd": 1
   },
   {
    "fieldname": "research_nature",
    "fieldtype": "Select",
    "label": "Research Nature",
-   "options": "Theoretical\nPractical\nTheoretical and Practical"
+   "options": "Theoretical\nPractical\nTheoretical and Practical",
+   "reqd": 1
   },
   {
    "fieldname": "research_status",
    "fieldtype": "Select",
    "label": "Research Status",
-   "options": "Post\nCompleted\nPlanned"
+   "options": "Post\nCompleted\nPlanned",
+   "reqd": 1
   },
   {
    "fieldname": "additional_details_about_the_research_section",
@@ -124,21 +133,9 @@
    "options": "\u0647\u0630\u0627 \u062d\u0642\u0644 \u0627\u0644\u0646\u0635 \u0627\u0644\u0630\u064a \u064a\u064f\u0643\u062a\u0628 \u0641\u064a\u0647 \u0645\u0644\u062e\u0635 \u0627\u0644\u0628\u062d\u062b"
   },
   {
-   "fieldname": "first_page_attachment",
-   "fieldtype": "Attach",
-   "label": "First Page Attachment",
-   "options": "\u0647\u0630\u0627 \u0644\u0644\u062d\u0627\u0642 \u0627\u0644\u0645\u0644\u0641 (PDF \u0623\u0648 \u0635\u0648\u0631\u0629 \u0627\u0644\u0635\u0641\u062d\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0645\u0646 \u0627\u0644\u0628\u062d\u062b \u0627\u0644\u0645\u0646\u0634\u0648\u0631)"
-  },
-  {
-   "fieldname": "additional_notes",
-   "fieldtype": "Small Text",
-   "label": "Additional Notes",
-   "options": "\u0644\u0644\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0625\u0636\u0627\u0641\u064a\u0629"
-  },
-  {
    "fieldname": "html_pbmy",
    "fieldtype": "HTML",
-   "options": "<link href=\"https://fonts.googleapis.com/css2?family=Tajawal:wght@500&amp;display=swap\" rel=\"stylesheet\">\n<div style='font-family: \"Tajawal\", sans-serif;\n  font-size: 17px;\n  color: #444;\n  line-height: 1.8;\n  text-align: right;\n  border-top: 1px solid #ccc;\n  margin-top: 20px;\n  padding-top: 10px;'>\n  <strong>\u0645\u0644\u0627\u062d\u0638\u0629:</strong> \u0641\u064a \u062d\u0627\u0644 \u0643\u0648\u0646 \u0627\u0644\u0628\u062d\u062b \u0645\u0646\u0634\u0648\u0631\u064b\u0627\u060c \u064a\u064f\u0631\u0641\u0642 \u0627\u0644\u0628\u0627\u062d\u062b \u0646\u0633\u062e\u0629 \u0645\u0646 \u0623\u0648\u0644 \u0635\u0641\u062d\u0629 \u0644\u0644\u0628\u062d\u062b \u0627\u0644\u0645\u0646\u0634\u0648\u0631\n</div>\n"
+   "options": "<link href=\"https://fonts.googleapis.com/css2?family=Tajawal:wght@500&amp;display=swap\" rel=\"stylesheet\">\n\n<div style='font-family: \"Tajawal\", sans-serif;\n  font-size: 17px;\n  color: #444;\n  text-align: right;'>\n  <strong>\u0645\u0644\u0627\u062d\u0638\u0629:</strong> \u0641\u064a \u062d\u0627\u0644 \u0643\u0648\u0646 \u0627\u0644\u0628\u062d\u062b \u0645\u0646\u0634\u0648\u0631\u064b\u0627\u060c \u064a\u064f\u0631\u0641\u0642 \u0627\u0644\u0628\u0627\u062d\u062b \u0646\u0633\u062e\u0629 \u0645\u0646 \u0623\u0648\u0644 \u0635\u0641\u062d\u0629 \u0644\u0644\u0628\u062d\u062b \u0627\u0644\u0645\u0646\u0634\u0648\u0631\n</div>"
   },
   {
    "fieldname": "copy_of_the_first_search_page",
@@ -171,19 +168,6 @@
    "label": "Magazine website link"
   },
   {
-   "fieldname": "journal_type",
-   "fieldtype": "Select",
-   "label": "Journal Type",
-   "options": "Local\nInternational\nScopus"
-  },
-  {
-   "depends_on": "eval:(doc.journal_type==\"Scopus\");",
-   "fieldname": "select_vprm",
-   "fieldtype": "Select",
-   "label": "scopus",
-   "options": "Q1\nQ2\nQ3\nQ4"
-  },
-  {
    "fieldname": "copy_of_acceptance_certificate_proof_of_acceptance",
    "fieldtype": "Attach Image",
    "label": "Copy of Acceptance Certificate (Proof of Acceptance)"
@@ -197,37 +181,45 @@
    "fieldname": "research_plan",
    "fieldtype": "Select",
    "label": "Research",
-   "options": "Inside the plan\nOutside the plan"
+   "options": "Inside the plan\nOutside the plan",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_pwen",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_vqtk",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_rtxy",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break",
+   "label": "Other information"
   },
   {
    "fieldname": "column_break_ftue",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_sggd",
+   "fieldname": "column_break_cllj",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_ggzx",
+   "fieldname": "section_break_ewbs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xakb",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ooos",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "journal_type_copy",
+   "fieldtype": "Select",
+   "label": "Journal Type Copy",
+   "options": "Local\nInternational\nScopus"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-24 11:20:51.268497",
+ "modified": "2026-02-25 10:58:23.770763",
  "modified_by": "obaidaamer@uotelafer.edu.iq",
  "module": "Research",
  "name": "Scientific Research Project Approval Form",

@@ -9,8 +9,8 @@
   "researcher_name",
   "academic_rank",
   "affiliation",
-  "email",
   "phone",
+  "email",
   "signature"
  ],
  "fields": [
@@ -30,7 +30,7 @@
    "fieldname": "affiliation",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "affiliation"
+   "label": "Affiliation body (university/college)"
   },
   {
    "fieldname": "email",
@@ -52,7 +52,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-08 10:26:12.587330",
+ "modified": "2026-02-25 10:49:40.076364",
  "modified_by": "obaidaamer@uotelafer.edu.iq",
  "module": "Research",
  "name": "Researcher",
