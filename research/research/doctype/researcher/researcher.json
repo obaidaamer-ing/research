@@ -46,7 +46,7 @@
    "fieldname": "phone",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "phone",
+   "label": "phone number",
    "reqd": 1
   },
   {
@@ -61,7 +61,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-25 11:21:48.473859",
+ "modified": "2026-03-02 09:27:02.782682",
  "modified_by": "obaidaamer@uotelafer.edu.iq",
  "module": "Research",
  "name": "Researcher",
