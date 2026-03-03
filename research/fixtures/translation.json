@@ -332,9 +332,9 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "ar",
-  "modified": "2026-02-23 13:17:07.686042",
+  "modified": "2026-03-03 09:10:49.883458",
   "name": "6r43jpf0eo",
-  "source_text": "Additional Notes",
+  "source_text": "Additional",
   "translated_text": "ملاحظات إضافية"
  },
  {
@@ -565,8 +565,8 @@
   "contribution_status": "",
   "docstatus": 0,
   "doctype": "Translation",
-  "language": "en",
-  "modified": "2026-02-25 10:44:05.493724",
+  "language": "ar",
+  "modified": "2026-03-03 09:06:18.323548",
   "name": "4lm418pj2n",
   "source_text": "researcher_name",
   "translated_text": "اسم الباحث"
@@ -591,8 +591,8 @@
   "contribution_status": "",
   "docstatus": 0,
   "doctype": "Translation",
-  "language": "en",
-  "modified": "2026-02-25 10:47:53.247450",
+  "language": "ar",
+  "modified": "2026-03-03 09:06:58.150140",
   "name": "6ssbtcv2cj",
   "source_text": "Affiliation body (university/college)",
   "translated_text": "جهة الانتساب(الجامعة/الكلية)"
@@ -643,10 +643,10 @@
   "contribution_status": "",
   "docstatus": 0,
   "doctype": "Translation",
-  "language": "en",
-  "modified": "2026-02-25 13:54:08.838354",
+  "language": "ar",
+  "modified": "2026-03-03 09:06:40.385935",
   "name": "1rp3v7lbev",
-  "source_text": "Please approve the registration of the research detailed below:",
+  "source_text": "Please approve the registration of the research detailed below.",
   "translated_text": ":يرجى التفضل بالموافقة على تسجيل البحث المذكوره تفاصيله أدناه"
  },
  {
@@ -656,8 +656,8 @@
   "contribution_status": "",
   "docstatus": 0,
   "doctype": "Translation",
-  "language": "en",
-  "modified": "2026-02-25 13:54:50.976345",
+  "language": "ar",
+  "modified": "2026-03-03 09:09:57.696655",
   "name": "kedkjfkgc2",
   "source_text": "Note: If the research is published, the researcher should attach a copy of the first page of the published research.",
   "translated_text": "ملاحظة: في حال كون البحث منشورًا، يُرفق الباحث نسخة من أول صفحة للبحث المنشور"

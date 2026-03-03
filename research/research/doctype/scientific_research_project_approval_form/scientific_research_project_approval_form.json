@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2025-10-28 20:16:26.890024",
  "doctype": "DocType",
@@ -219,8 +220,8 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-25 13:54:33.318047",
- "modified_by": "obaidaamer@uotelafer.edu.iq",
+ "modified": "2026-03-02 13:20:08.857788",
+ "modified_by": "Administrator",
  "module": "Research",
  "name": "Scientific Research Project Approval Form",
  "owner": "Administrator",
