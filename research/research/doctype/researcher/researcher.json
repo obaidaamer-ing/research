@@ -53,16 +53,15 @@
    "fieldname": "signature",
    "fieldtype": "Attach",
    "in_list_view": 1,
-   "label": "signature",
-   "reqd": 1
+   "label": "signature"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-02 09:27:02.782682",
- "modified_by": "obaidaamer@uotelafer.edu.iq",
+ "modified": "2026-03-03 09:17:56.064027",
+ "modified_by": "Administrator",
  "module": "Research",
  "name": "Researcher",
  "owner": "Administrator",
