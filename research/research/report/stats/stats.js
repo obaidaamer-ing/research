@@ -47,23 +47,4 @@ frappe.query_reports["Stats"] = {
 
 		return value;
 	},
-
-	get_chart_data: function (columns, result) {
-		if (!result || result.length === 0) return null;
-
-		const typeCounts = {};
-		result.forEach((row) => {
-			const t = row.research_type || "Unknown";
-			typeCounts[t] = (typeCounts[t] || 0) + 1;
-		});
-
-		return {
-			data: {
-				labels: Object.keys(typeCounts),
-				datasets: [{ values: Object.values(typeCounts) }],
-			},
-			type: "donut",
-			colors: ["#5e64ff", "#743ee2", "#ff5858", "#28a745"],
-		};
-	},
 };

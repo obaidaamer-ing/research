@@ -12,6 +12,8 @@
   "date_of_application",
   "text_editor_ayvn",
   "research",
+  "college",
+  "department",
   "section_break_rubf",
   "researchers",
   "general_information_section",
@@ -27,15 +29,21 @@
   "section_break_ewbs",
   "html_pbmy",
   "copy_of_the_first_search_page",
+  "research_status_section",
+  "select_qjyb",
   "section_break_pwen",
-  "research_acceptance_information",
   "date_of_submission",
   "date_of_acceptance",
+  "publication_date",
   "name_of_journal",
   "journal_type_copy",
+  "select_jyjq",
+  "citescore",
+  "impact_factor",
   "column_break_xakb",
   "magazine_website_link",
   "copy_of_acceptance_certificate_proof_of_acceptance",
+  "a_copy_of_the_publication_certificate_proof_of_publication",
   "section_break_ooos",
   "additional"
  ],
@@ -66,7 +74,7 @@
    "fieldname": "research",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Research",
+   "label": "Research Name",
    "reqd": 1
   },
   {
@@ -104,21 +112,21 @@
    "fieldname": "research_type",
    "fieldtype": "Select",
    "label": "Research Type",
-   "options": "Academic\nApplied\nAcademic and Applied",
+   "options": "\nAcademic\nApplied\nAcademic and Applied",
    "reqd": 1
   },
   {
    "fieldname": "research_nature",
    "fieldtype": "Select",
    "label": "Research Nature",
-   "options": "Theoretical\nPractical\nTheoretical and Practical",
+   "options": "\nTheoretical\nPractical\nTheoretical and Practical",
    "reqd": 1
   },
   {
    "fieldname": "research_status",
    "fieldtype": "Select",
    "label": "Research Status",
-   "options": "Post\nCompleted\nPlanned",
+   "options": "\nPost\nCompleted\nPlanned",
    "reqd": 1
   },
   {
@@ -143,16 +151,12 @@
    "label": "Copy of the first search page"
   },
   {
-   "fieldname": "research_acceptance_information",
-   "fieldtype": "Data",
-   "label": "Research acceptance information"
-  },
-  {
    "fieldname": "date_of_submission",
    "fieldtype": "Date",
    "label": "Date of Submission"
   },
   {
+   "depends_on": "eval:doc.select_qjyb === \"Acceptance of research\"",
    "fieldname": "date_of_acceptance",
    "fieldtype": "Date",
    "label": "Date of Acceptance"
@@ -164,10 +168,11 @@
   },
   {
    "fieldname": "magazine_website_link",
-   "fieldtype": "Attach",
+   "fieldtype": "Data",
    "label": "Magazine website link"
   },
   {
+   "depends_on": "eval:doc.select_qjyb === \"Acceptance of research\"",
    "fieldname": "copy_of_acceptance_certificate_proof_of_acceptance",
    "fieldtype": "Attach Image",
    "label": "Copy of Acceptance Certificate (Proof of Acceptance)"
@@ -181,13 +186,13 @@
    "fieldname": "research_plan",
    "fieldtype": "Select",
    "label": "Research",
-   "options": "Inside the plan\nOutside the plan",
+   "options": "\nInside the plan\nOutside the plan",
    "reqd": 1
   },
   {
+   "depends_on": "eval:[\"Acceptance of research\",\"Publishing the research\"].includes(doc.select_qjyb)",
    "fieldname": "section_break_pwen",
-   "fieldtype": "Section Break",
-   "label": "Other information"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "column_break_ftue",
@@ -212,14 +217,68 @@
   {
    "fieldname": "journal_type_copy",
    "fieldtype": "Select",
-   "label": "Journal Type Copy",
-   "options": "Local\nInternational\nScopus"
+   "label": "Journal Type",
+   "options": "\nLocal\nInternational\nScopus\nClarivate\nArabic Magazine"
+  },
+  {
+   "depends_on": "eval:doc.journal_type_copy === \"Scopus\"",
+   "fieldname": "select_jyjq",
+   "fieldtype": "Select",
+   "label": "Scopus ranking",
+   "options": "\nQ1\nQ2\nQ3\nQ4"
+  },
+  {
+   "depends_on": "eval:doc.journal_type_copy === \"Scopus\"",
+   "fieldname": "citescore",
+   "fieldtype": "Data",
+   "label": "CiteScore"
+  },
+  {
+   "depends_on": "eval:doc.journal_type_copy === \"Clarivate\"",
+   "fieldname": "impact_factor",
+   "fieldtype": "Data",
+   "label": "Impact Factor"
+  },
+  {
+   "fieldname": "research_status_section",
+   "fieldtype": "Section Break",
+   "label": "Research status"
+  },
+  {
+   "fieldname": "select_qjyb",
+   "fieldtype": "Select",
+   "label": "Is the research accepted or published ?",
+   "options": "\nAcceptance of research\nPublishing the research"
+  },
+  {
+   "depends_on": "eval:doc.select_qjyb === \"Publishing the research\"",
+   "fieldname": "publication_date",
+   "fieldtype": "Date",
+   "label": "Publication Date"
+  },
+  {
+   "depends_on": "eval:doc.select_qjyb === \"Publishing the research\"",
+   "fieldname": "a_copy_of_the_publication_certificate_proof_of_publication",
+   "fieldtype": "Attach Image",
+   "label": "A copy of the publication certificate (proof of publication)."
+  },
+  {
+   "fieldname": "college",
+   "fieldtype": "Link",
+   "label": "college",
+   "options": "College"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "departments",
+   "options": "Departments"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-03 09:19:14.021798",
+ "modified": "2026-03-09 12:09:25.608805",
  "modified_by": "Administrator",
  "module": "Research",
  "name": "Scientific Research Project Approval Form",
