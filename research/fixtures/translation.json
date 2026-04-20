@@ -59,9 +59,9 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "ar",
-  "modified": "2026-02-23 13:17:07.594058",
+  "modified": "2026-04-20 12:15:39.593158",
   "name": "6r334erkvi",
-  "source_text": "researchers",
+  "source_text": "Researchers",
   "translated_text": "الباحثون"
  },
  {
@@ -696,9 +696,9 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "ar",
-  "modified": "2026-03-09 13:05:48.925851",
+  "modified": "2026-04-20 12:17:55.515778",
   "name": "4n1j1v26ho",
-  "source_text": "Is the research accepted or published ?\r\n",
+  "source_text": "Is the research accepted or published ?",
   "translated_text": "هل تم قبول البحث أو نشره؟"
  },
  {
@@ -869,5 +869,18 @@
   "name": "9c5h1tfck2",
   "source_text": "mathematics",
   "translated_text": "الرياضيات"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "ar",
+  "modified": "2026-04-20 12:16:52.367105",
+  "name": "lhb57gb8g0",
+  "source_text": "Research",
+  "translated_text": "البحث"
  }
 ]
